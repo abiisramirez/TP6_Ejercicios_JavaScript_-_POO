@@ -21,7 +21,7 @@ form{
     display: flex;
     flex-direction: column;
     padding: 50px;
-    width: 420px;
+    width: 400px;
     box-shadow: 0 0 20px rgba(red, green, blue, alpha);
     text-align: center;
     border-radius: 30px;
@@ -33,33 +33,26 @@ form h2{
 
 }
 input{
-    padding: 17px;
-    border-radius: 25px;
+    padding: 15px;
+    border-radius: 15px;
     background-color: white;
     border: 2px solid #252525;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     outline: none;
     color: rgb(17, 12, 85);
-    font-size: 16px;
+    font-size: 18px;
 }
 ::placeholder{
     color: rgb(49, 25, 158);
+    font-size: 11px;
 }
 .btn{
-    background-color: #e53854;
-    border: #e53854;
+    background-color: hwb(225 22% 10%);
+    border: #3d017d;
     cursor: pointer;
     color: aliceblue;
 }
 .btn:hover{
-    background: color #f33f5a;
-    border: 2px solid color #f33f5a;
-}
-@media(max-width:991px;){
-    body{
-        padding: 30px;
-    }
-    form{
-        width: 340px;
-    }
+    background: color #021633;
+    border: 2px solid color #021633;
 }
