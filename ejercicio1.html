@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie de Fibonacci</title>
+    <link rel="stylesheet" href="fibonacci.css">
+</head>
+<body>
+    <form>
+        <h2>Serie de Fibonacci</h2>
+        <p>Número de elementos: <input type="number" min="2" placeholder="Dígitos deseados en serie Fibonacci" id="digitos" required></p>
+        <input type="button" class="btn" value="Ver serie" onclick="mostrarSerieFibonacci()">
+        <p id="Result"></p>
+    </form>
+    <script>
+        function mostrarSerieFibonacci (){
+            var numeroDeElementos= document.getElementById("digitos").value;
+            const fibonacci= [0, 1];
+            while (true) {
+                const nextNumber = fibonacci[fibonacci.length-1] + fibonacci[fibonacci.length-2];
+                fibonacci.push(nextNumber);
+                if (fibonacci.length >= numeroDeElementos ) {
+                    break;
+}
+}
+        console.log("Serie Fibonacci con " + numeroDeElementos + " dígitos: " + fibonacci.join(", "));    
+        document.getElementById("Result").innerHTML= "Serie Fibonacci con " + numeroDeElementos + " dígitos: " + fibonacci.join(", "); 
+        }
+    </script>
+</body>
+</html>
